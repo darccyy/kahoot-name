@@ -15,7 +15,9 @@ app.use(function (req, res, next) {
 
 // Get name
 app.get(["/name", "/name/*"], (req, res) => {
-  res.send(`{"name":"${req.params[0] || "https://bruh.news"}"}`);
+  var name = req.params[0] || "https://bruh.news";
+  console.log(`Someone is named '${name}' :)`)
+  res.send(`{"name":"${name}"}`);
 });
 
 // Check server is up
