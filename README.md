@@ -29,4 +29,5 @@ Domain: `https://kahootname.herokuapp.com/` (Returns `200`)
 Fetch name: `./name/<NAME>` (If no name is given, default will be used)
 
 # Issues
+
 [Create an issue](https://github.com/darccyy/kahoot-name/issues/new)
