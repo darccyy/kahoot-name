@@ -1,19 +1,23 @@
 # Kahoot Name
 
-Kahoot renaming server
+Kahoot renaming API.
+Use Redirector addon to use custom name for Kahoot generated name.
+
+Hosted on Heroku with Express Node JS
 
 # Usage
 
-(Firefox)
-
-1. Install [Redirector](https://addons.mozilla.org/en-US/firefox/addon/redirector/)
-2. Click the Redicector button (Addon) -> 'Edit Redirects'
+1. Install **Redirector** addon on [Firefox](https://addons.mozilla.org/en-US/firefox/addon/redirector/) or [Chrome](https://chrome.google.com/webstore/detail/redirector/ocgpenflpmgnfapjedencafcfakcekcd)
+2. Click the Redirector button (Addon) -> 'Edit Redirects'
 3. 'Create new redirect'
 4. 'Example URL': `https://apis.kahoot.it/namerator`
 5. 'Include Pattern': `https://apis.kahoot.it/namerator`
-6. 'Redirect to': `https://kahootname.herokuapp.com/name/<NAME>` with `<NAME>` being the custom name
+6. 'Redirect to': `https://kahootname.herokuapp.com/name/<NAME>` with `<NAME>` being the name you want
 7. Click 'Show advanced options'
 8. Make sure 'XMLHttpRequests (Ajax)' is checked
 9. Click Save
 
 It should automatically change the name once you spin
+
+# Issues
+[Create an issue](https://github.com/darccyy/kahoot-name/issues/new)
