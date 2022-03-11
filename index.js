@@ -24,7 +24,7 @@ app.get(["/name", "/name/*"], (req, res) => {
 });
 
 // Test
-app.get("/test", (req, res) => {
+app.get("/", (req, res) => {
   res.sendStatus(200);
 });
 
