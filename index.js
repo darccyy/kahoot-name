@@ -1,13 +1,8 @@
 const express = require("express");
 const app = express();
 
-// Allow ALL access HEHEHE
+// Allow CORS
 const cors = require("cors");
-const allowedOrigins = [
-  "*",
-  "https://kahoot.it/namerator",
-  "https://kahoot.it",
-];
 app.use(cors());
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -23,11 +18,12 @@ app.get(["/name", "/name/*"], (req, res) => {
   res.send(`{"name":"${req.params[0] || "https://bruh.news"}"}`);
 });
 
-// Test
+// Check server is up
 app.get("/", (req, res) => {
   res.sendStatus(200);
 });
 
+// Listen
 app.listen(process.env.PORT || 3000, () => {
   console.log(
     "Listening on " +

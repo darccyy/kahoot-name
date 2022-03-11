@@ -3,7 +3,7 @@
 Kahoot renaming API.
 Use Redirector addon to use custom name for Kahoot generated name.
 
-Hosted on Heroku with Express Node JS.
+Hosted on Heroku with Express Node JS (Just a little program).
 In the future it will most likely be moved to a new domain.
 
 # Usage
