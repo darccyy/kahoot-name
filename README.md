@@ -26,7 +26,9 @@ It should automatically change the name once you spin
 
 Domain: `https://kahootname.herokuapp.com/` (Returns `200`)
 
-Fetch name: `./name/<NAME>` (If no name is given, default will be used)
+Fetch name: `./name/<NAME>`.
+If no name is given, default will be used.
+Add the caret (`^`) character to represent an invisible character. This will not show on the screen, and will bypass the profanity filter.
 
 # Issues
 

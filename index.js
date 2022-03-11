@@ -16,7 +16,8 @@ app.use(function (req, res, next) {
 // Get name
 app.get(["/name", "/name/*"], (req, res) => {
   var name = req.params[0] || "https://bruh.news";
-  console.log(`Someone is named '${name}' :)`)
+  console.log(`Someone is named '${name}' :)`);
+  name = name.split("^").join("ㅤ"); // Replace with invisible character
   res.send(`{"name":"${name}"}`);
 });
 
