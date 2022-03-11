@@ -24,11 +24,9 @@ It should automatically change the name once you spin
 
 ## API Usage
 
-Domain: `https://kahootname.herokuapp.com/`
+Domain: `https://kahootname.herokuapp.com/` (Returns `200`)
 
 Fetch name: `./name/<NAME>` (If no name is given, default will be used)
-
-Check if server is up: `./test` (Returns `200`)
 
 # Issues
 [Create an issue](https://github.com/darccyy/kahoot-name/issues/new)
